@@ -1,27 +1,20 @@
 import React, { useState } from 'react'
 import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
+import { Fab } from '../components/Fab';
+
 
 export const CounterScreen = () => {
 
     const [contador, setContador] = useState(0);
-
-
 
     return (
         <View
             style={myStyles.container}>
             <Text style={myStyles.tittle}>Contador: {contador}</Text>
 
-            <TouchableOpacity
-                style={myStyles.fabLocation}
-                onPress={() => setContador(contador + 1)}
-            >
-                <View style={myStyles.fab}>
-                    <Text style={myStyles.fabText}>
-                        +1
-                    </Text>
-                </View>
-            </TouchableOpacity>
+            <Fab
+                tittle='+1'
+            />
 
             <TouchableOpacity
                 style={myStyles.fabLocationLeft}
