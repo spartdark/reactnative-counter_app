@@ -14,16 +14,23 @@ export const CounterScreen = () => {
 
             <Fab
                 tittle='+1'
+                position='right'
+                mOnPress={() => setContador(contador + 1)}
             />
 
-            <TouchableOpacity
+            <Fab
+                tittle='-1'
+                position='left'
+                mOnPress={() => setContador(contador - 1)}
+            />
+            {/*  <TouchableOpacity
                 style={myStyles.fabLocationLeft}
                 onPress={() => setContador(contador - 1)}
             >
                 <View style={myStyles.fab}>
                     <Text style={myStyles.fabText}> -1 </Text>
                 </View>
-            </TouchableOpacity>
+            </TouchableOpacity> */}
 
         </View>
     )
@@ -39,30 +46,6 @@ const myStyles = StyleSheet.create({
         fontSize: 40,
         position: 'relative',
         top: -15,
-    },
-    fabLocation: {
-        position: 'absolute',
-        bottom: 25,
-        right: 25
-    },
-    fabLocationLeft: {
-        position: 'absolute',
-        bottom: 25,
-        left: 25
-    }
-    ,
-    fab: {
-        backgroundColor: '#5cc9f5',
-        width: 60,
-        height: 60,
-        borderRadius: 100,
-        justifyContent: 'center'
-    },
-    fabText: {
-        color: 'white',
-        fontSize: 25,
-        fontWeight: 'bold',
-        alignSelf: 'center'
     }
 
 })
