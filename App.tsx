@@ -1,10 +1,12 @@
 import React from 'react'
 import { Text, View } from 'react-native';
-import { HolaMundoScreen } from './src/screens/HolaMundoScreen';
+import { CounterScreen } from './src/screens/CounterScreen';
+//import { HolaMundoScreen } from './src/screens/HolaMundoScreen';
 
- const App = () => {
+const App = () => {
   return (
-    <HolaMundoScreen></HolaMundoScreen>
+    //<HolaMundoScreen></HolaMundoScreen>
+    <CounterScreen />
   )
 }
 export default App;
