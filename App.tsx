@@ -1,12 +1,15 @@
 import React from 'react'
-import { Text, View } from 'react-native';
-import { CounterScreen } from './src/screens/CounterScreen';
+import { SafeAreaView } from 'react-native';
+import { DimenScreen } from './src/screens/DimenScreen';
 //import { HolaMundoScreen } from './src/screens/HolaMundoScreen';
 
 const App = () => {
   return (
     //<HolaMundoScreen></HolaMundoScreen>
-    <CounterScreen />
+    <SafeAreaView style={{ flex: 1}}>
+       <DimenScreen/>
+    </SafeAreaView>
+   
   )
 }
 export default App;
